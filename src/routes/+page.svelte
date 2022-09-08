@@ -111,4 +111,8 @@
             transform: rotate(-20deg);
         }
     }
+
+    @media screen and (min-width: 600px){
+        
+    }
 </style>
