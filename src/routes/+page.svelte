@@ -6,7 +6,7 @@
     <div class="out">
         <div class="in">
             <div class="box">
-                <h2>LET'S GET YOUR BUSINESS AND SERVICES ONLINE</h2>
+                <h3 class="heading">LET'S GET YOUR BUSINESS SERVICES ONLINE</h3>
                 <p>
                     We design full stack web servers in the cloud that keep your
                     business and services always available to you and your
@@ -33,8 +33,10 @@
         }
     }
 
-    h2 {
+    .heading {
         font-family: "Roboto", sans-serif;
+        text-align: center;
+        padding: 1em 2em;
     }
     .out {
         position: relative;
@@ -47,10 +49,6 @@
         height: 400px;
         left: 50%;
         transform: translate(-50%, 40px);
-    }
-    .in h2 {
-        text-align: center;
-        padding: 1em 2em;
     }
     .in p {
         text-align: center;
@@ -67,7 +65,8 @@
     .in .box:nth-child(1) {
         border: 2px solid hsl(175, 98%, 36%);
         z-index: 4;
-        background-color: hsla(175, 98%, 36%, .5);
+        /* background-color: hsla(175, 98%, 36%, .5); */
+        background-color: rgb(185, 190, 198);
     }
 
     .in .box:nth-child(2) {
@@ -77,6 +76,7 @@
         animation-fill-mode: forwards;
         animation-duration: 1s;
         border: 3px solid rgb(154, 149, 167);
+        /* border: 3px solid rgb(182, 189, 200) */
     }
 
     .in .box:nth-child(3) {
@@ -96,19 +96,19 @@
 
     @keyframes tilt-child-2 {
         from {
-            transform: rotate(0deg);
+            rotate: 0deg;
         }
         to {
-            transform: rotate(20deg);
+            rotate: 20deg;
         }
     }
 
     @keyframes tilt-child-3 {
         from {
-            transform: rotate(0deg);
+            rotate: 0deg;
         }
         to {
-            transform: rotate(-20deg);
+            rotate: -20deg;
         }
     }
 
