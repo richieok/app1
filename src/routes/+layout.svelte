@@ -4,7 +4,8 @@
 
     const links = [
         { name: 'Home', href: "/"},
-        { name: 'Samples', href: '/samples'}
+        { name: 'Samples', href: '/samples'},
+        { name: 'About', href: '/about'}
     ]
 </script>
 
@@ -18,6 +19,8 @@
 <style>
     div {
         background: linear-gradient(-45deg, rgba(90, 90, 90, 0.5), rgba(90, 90, 90, 1));
-        height: 100vh;
+        /* height: 100vh; */
+        width: 100vw;
+        min-height: 100vh;
     }
 </style>

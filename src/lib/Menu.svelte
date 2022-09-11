@@ -21,8 +21,7 @@
 <style>
     ul {
         display: flex;
-        /* background-color: rgba(200, 200, 200, 1); */
-        background-color: rgb(185, 190, 198);
+        background-color: var(--color-1);
         z-index: 10;
     }
     li {

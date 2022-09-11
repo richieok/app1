@@ -2,117 +2,81 @@
     <title>Welcome to Qubit Tech</title>
 </svelte:head>
 
-<div class="fade">
-    <div class="out">
-        <div class="in">
-            <div class="box">
-                <h3 class="heading">LET'S GET YOUR BUSINESS SERVICES ONLINE</h3>
-                <p>
-                    We design full stack web servers in the cloud that keep your
-                    business and services always available to you and your
-                    clients from anywhere in the world.
-                </p>
-            </div>
-            <div class="box" />
-            <div class="box" />
-        </div>
-    </div>
+<div class="banner fade">
+    <h3 class="heading">LET'S GET YOUR BUSINESS SERVICES ONLINE</h3>
+    <div class="incline angle1"></div>
+    <div class="incline angle2"></div>
 </div>
+<!-- <p>
+    We design full stack web servers in the cloud that keep your
+    business and services always available to you and your
+    clients from anywhere in the world.
+</p> -->
+
 
 <style>
+    .banner {
+        position: relative;
+        display: flex;
+        width: 300px;
+        height: 400px;
+        background-color: var(--color-1);
+        margin: 3em auto;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .heading {
+        text-align: center;
+        padding: 2em;
+    }
+
+    
     .fade {
         animation-name: fade;
         animation-duration: 1s;
     }
-    @keyframes fade {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    .heading {
-        font-family: "Roboto", sans-serif;
-        text-align: center;
-        padding: 1em 2em;
-    }
-    .out {
-        position: relative;
-        width: 100%;
-        min-height: calc(100vh - var(--nav-height));
-    }
-    .in {
-        position: absolute;
-        width: 300px;
-        height: 400px;
-        left: 50%;
-        transform: translate(-50%, 40px);
-    }
-    .in p {
-        text-align: center;
-        padding: 0 2em;
-    }
-    .box {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform-origin: -20% 90%;
-        border-radius: 10px;
-    }
-
-    .in .box:nth-child(1) {
-        border: 2px solid hsl(175, 98%, 36%);
-        z-index: 4;
-        /* background-color: hsla(175, 98%, 36%, .5); */
-        background-color: rgb(185, 190, 198);
-    }
-
-    .in .box:nth-child(2) {
-        /* background-color: red; */
-        z-index: -2;
-        animation-name: tilt-child-2;
-        animation-fill-mode: forwards;
-        animation-duration: 1s;
-        border: 3px solid rgb(154, 149, 167);
-        /* border: 3px solid rgb(182, 189, 200) */
-    }
-
-    .in .box:nth-child(3) {
-        border: 2px solid lightblue;
-        z-index: -3;
-        animation: tilt-child-3 1s forwards;
-    }
-
-    @keyframes shadow {
-        from {
-            box-shadow: 2px 2px var(--color-teal-alpha);
-        }
-        to {
-            box-shadow: 10px 15px var(--color-teal-alpha);
-        }
-    }
-
-    @keyframes tilt-child-2 {
-        from {
-            rotate: 0deg;
-        }
-        to {
-            rotate: 20deg;
-        }
-    }
-
-    @keyframes tilt-child-3 {
-        from {
-            rotate: 0deg;
-        }
-        to {
-            rotate: -20deg;
-        }
-    }
-
+    
     @media screen and (min-width: 600px){
-        
+        .incline {
+            position: absolute;
+            width: inherit;
+            height: inherit;
+            border-radius: 10px;
+        }
+
+        .angle1 {
+            z-index: -3;
+            border: 4px solid rgba(80, 87, 98, .5);
+            transform-origin: 10% 90%;
+            rotate: 0deg;
+            animation: tilt1 1s forwards;
+        }
+
+        .angle2 {
+            z-index: -2;
+            border: 4px solid rgba(90, 60, 98, .9);
+            transform-origin: 10% 90%;
+            rotate: 0deg;
+            animation: tilt2 1s forwards;
+        }
+
+        @keyframes tilt1 {
+            from {
+                rotate: 0deg;
+            }
+            to {
+                rotate:25deg;
+            }
+        }
+
+        @keyframes tilt2 {
+            from {
+                rotate: 0deg;
+            }
+            to {
+                rotate: -25deg;
+            }
+        }
     }
 </style>
