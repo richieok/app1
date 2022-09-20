@@ -6,4 +6,19 @@
     <title>Error</title>
 </svelte:head>
 
-<h3>{$page.status}: {$page.error.message}</h3>
+<div>
+    <h3>Status: {$page.status}<br>{$page.error.message}</h3>
+</div>
+
+<style>
+    div {
+        width: 300px;
+        background-color: var(--color-1);
+        margin: 4em auto;
+        border-radius: 10px;
+    }
+
+    h3 {
+        padding: 1em;
+    }
+</style>

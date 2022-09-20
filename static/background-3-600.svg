@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="600"
+   height="900"
+   viewBox="0 0 158.75 238.12501"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="background-3-600.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.5341791"
+     inkscape:cx="974.3923"
+     inkscape:cy="543.8251"
+     inkscape:window-width="1920"
+     inkscape:window-height="1046"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient11135">
+      <stop
+         style="stop-color:#51b1ba;stop-opacity:1;"
+         offset="0"
+         id="stop11131" />
+      <stop
+         style="stop-color:#adc2bd;stop-opacity:0.87058824;"
+         offset="1"
+         id="stop11133" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11135"
+       id="linearGradient11137"
+       x1="19.422625"
+       y1="31.783455"
+       x2="185.35089"
+       y2="257.14874"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-21.899166,-22.620258)">
+    <rect
+       style="fill:url(#linearGradient11137);fill-opacity:1;fill-rule:evenodd;stroke-width:0.211209"
+       id="rect11129"
+       width="158.75"
+       height="238.125"
+       x="21.899166"
+       y="22.620258" />
+  </g>
+</svg>

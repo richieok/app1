@@ -8,21 +8,19 @@
     // ]
 </script>
 
-<div>
-    <ul>
-        {#each links as t}
-            <li class:active={$page.url.pathname === `${t['href']}`}><a href={t['href']}>{t['name']}</a></li>
-        {/each}
-        <!-- <li class:active={$page.url.pathname === '/'}><a href="/">Home</a></li>
-        <li class:active={$page.url.pathname === '/samples'}><a href="/">Samples</a></li> -->
-    </ul>
-</div>
+<ul>
+    {#each links as t}
+        <li class:active={$page.url.pathname === `${t['href']}`}><a href={t['href']}>{t['name']}</a></li>
+    {/each}
+    <!-- <li class:active={$page.url.pathname === '/'}><a href="/">Home</a></li>
+    <li class:active={$page.url.pathname === '/samples'}><a href="/">Samples</a></li> -->
+</ul>
 
 <style>
     ul {
         display: flex;
-        background-color: var(--color-1);
         z-index: 10;
+        background-color: var(--color-1);
     }
     li {
         list-style: none;
