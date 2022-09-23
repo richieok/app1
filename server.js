@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { handler } from './build/handler.js';
 import express from 'express'
 
